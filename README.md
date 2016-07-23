@@ -132,6 +132,8 @@ For styling, you can put together something similar to this:
     }
 ```
 
+#### Remember to rename your stylesheet with an `.erb` extension
+
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake test` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
