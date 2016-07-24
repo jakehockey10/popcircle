@@ -1,11 +1,9 @@
 require 'test_helper'
 
 class PopcircleTest < Minitest::Test
-  def test_that_it_has_a_version_number
-    refute_nil ::Popcircle::VERSION
+
+  def test_has_version_number
+    refute_nil ::Popcircle::Rails::VERSION
   end
 
-  def test_it_does_something_useful
-    assert false
-  end
 end

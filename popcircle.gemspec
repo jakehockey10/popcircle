@@ -5,7 +5,7 @@ require 'popcircle/version'
 
 Gem::Specification.new do |spec|
   spec.name          = 'popcircle'
-  spec.version       = Popcircle::VERSION
+  spec.version       = Popcircle::Rails::VERSION
   spec.authors       = ['Jake Smith']
   spec.email         = ['jakehockey10@gmail.com']
 
@@ -25,6 +25,9 @@ Gem::Specification.new do |spec|
   spec.bindir        = 'exe'
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ['lib']
+
+  spec.add_dependency 'rails', '~> 5.0'
+  spec.add_dependency 'font-awesome-rails'
 
   spec.add_development_dependency 'bundler', '~> 1.12'
   spec.add_development_dependency 'rake', '~> 10.0'
