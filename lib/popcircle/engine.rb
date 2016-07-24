@@ -21,11 +21,6 @@ module Popcircle
           include FontAwesome::Rails::IconHelper
         end
       end
-      initializer :assets do |app|
-        app.config.assets.precompile += %w{ popcircle.js popcircle.scss }
-        app.config.assets.paths << root.join('app', 'assets', 'javascripts')
-        app.config.assets.paths << root.join('app', 'assets', 'stylesheets')
-      end
     end
   end
 end
