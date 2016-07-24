@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class PopcircleTest < ActionDispatch::IntegrationTest
+class PopcircleViewTest < ActionDispatch::IntegrationTest
   test 'I got a popcircle' do
     get popcircle_show_path
     assert_select '.popcircle-box', count: 1
