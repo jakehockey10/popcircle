@@ -9,7 +9,7 @@ This gem adds `jquery.easing` and `jquery.popcircle` to your application and pro
 Add this line to your application's Gemfile:
 
 ```ruby
-    gem 'popcircle', github: 'jakehockey10/popcircle'
+    gem 'popcircle'
 ```
 
 And then execute:
