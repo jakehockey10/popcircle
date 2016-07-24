@@ -10,3 +10,6 @@
 
 # RubyMine
 .idea/
+
+# byebug
+.byebug_history
