@@ -1,8 +1,6 @@
 # Popcircle
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/popcircle`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+This gem adds `jquery.easing` and `jquery.popcircle` to your application and provides a view helper to add a radial menu with images or icons as the links surrounding the main trigger.
 
 ## Installation
 
@@ -41,6 +39,7 @@ Second, you can include something like this in your `HTML`
 - improve helper method
 - allow trigger background image to be configurable
 - allow size to be configurable
+- make icons line up
 
 ## Contributing
 
