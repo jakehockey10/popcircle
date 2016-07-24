@@ -9,7 +9,7 @@ This gem adds `jquery.easing` and `jquery.popcircle` to your application and pro
 Add this line to your application's Gemfile:
 
 ```ruby
-    gem 'popcircle'
+gem 'popcircle'
 ```
 
 And then execute:
@@ -25,13 +25,13 @@ Or install it yourself as:
 First, make sure your `application.js` file includes the following:
 
 ```javascript
-    //= require popcircle/popcircle
+//= require popcircle/popcircle
 ```
 
 Second, you can include something like this in your `HTML`
 
 ```HTML
-    <%= popcircle(images: %w(one.png two.png three.png four.png five.png)) %>
+<%= popcircle(images: %w(one.png two.png three.png four.png five.png)) %>
 ```
 
 ## TODO
