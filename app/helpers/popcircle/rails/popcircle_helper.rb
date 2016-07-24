@@ -4,8 +4,15 @@ module Popcircle
       include ActionView::Helpers::TagHelper
       include FontAwesome::Rails::IconHelper
 
-      def popcircle(*circles)
-        options        = circles.length > 1 ? circles.extract_options! : {}
+      def popcircle(circles, options = {})
+        # options        = circles.length > 1 ? circles.extract_options! : {}
+        raise Exception.new('Argument `circles` not a Hash...') unless circles.is_a? Hash
+
+        if circles[:icons]
+          circles = circles[:icons].map { |circle| { icon: circle } }
+        elsif circles[:images]
+          circles = circles[:images].map { |circle| { image: circle } }
+        end
         options[:list] ||= 'pops'
         content_tag :div, class: 'popcircle-box' do
           trigger + list(circles, options)
@@ -37,7 +44,7 @@ module Popcircle
           if circle[:image]
             image_tag circle[:image]
           elsif circle[:icon]
-            fa_icon circle[:icon]
+            fa_icon "#{circle[:icon]} 2x"
           else
             'UH OH'
           end
