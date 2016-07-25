@@ -1,5 +1,7 @@
 # Popcircle
 
+![](https://img.shields.io/gem/dt/popcircle.svg)
+
 ![Alt text](/popcircle.gif)
 
 This gem adds `jquery.easing` and `jquery.popcircle` to your application and provides a view helper to add a radial menu with images or icons as the links surrounding the main trigger.
@@ -9,7 +11,7 @@ This gem adds `jquery.easing` and `jquery.popcircle` to your application and pro
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'popcircle', github: 'jakehockey10/popcircle'
+gem 'popcircle'
 ```
 
 And then execute:
@@ -45,7 +47,7 @@ Second, you can include something like this in your `HTML`
 
 I could use some help!
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/popcircle. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/jakehockey10/popcircle. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## Development
 
