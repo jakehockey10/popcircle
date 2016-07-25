@@ -1,6 +1,6 @@
 # Popcircle
 
-![](http://ruby-gem-downloads-badge.herokuapp.com/popcircle)
+![](https://img.shields.io/gem/dt/popcircle.svg)
 
 ![Alt text](/popcircle.gif)
 
