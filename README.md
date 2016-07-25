@@ -1,6 +1,6 @@
 # Popcircle
 
-![](https://img.shields.io/gem/dt/popcircle.svg)
+[![Gem Downloads](https://img.shields.io/gem/dt/popcircle.svg)](https://badge.fury.io/rb/popcircle) [![Gem Version](https://badge.fury.io/rb/popcircle.svg)](https://badge.fury.io/rb/popcircle)
 
 ![Alt text](/popcircle.gif)
 
@@ -36,12 +36,20 @@ Second, you can include something like this in your `HTML`
 <%= popcircle(images: %w(one.png two.png three.png four.png five.png)) %>
 ```
 
+You can also use font awesome icons!  Thanks [font-awesome-rails](https://github.com/bokmann/font-awesome-rails)!
+
+```HTML
+<%= popcircle(icons: %w(facebook twitter google linkedin github)) %>
+```
+
 ## TODO
 
-- Get helper tests back to running
+- get helper tests back to running
+- get `rake test` to run both gem tests and dummy app tests correctly
 - improve helper method
 - allow trigger background image to be configurable
 - allow size to be configurable
+- allow for stacked icons
 
 ## Contributing
 
