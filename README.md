@@ -42,6 +42,7 @@ Second, you can include something like this in your `HTML`
 - improve helper method
 - allow trigger background image to be configurable
 - allow size to be configurable
+- allow for stacked icons
 
 ## Contributing
 
