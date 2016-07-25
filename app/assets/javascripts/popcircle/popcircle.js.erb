@@ -6,14 +6,25 @@
 //= require jquery.popcircle
 
 $(document).on('turbolinks:load', function () {
-  $('.popcircle-trigger').click(function (e) {
-    e.preventDefault();
-    $.popcircle('#pops', {
-      spacing: '10px',
-      type: 'full', // full, half, quad
-      offset: 1.95, // 0, 1, 2, 3, 4, 5, 6, 7, or 5.1
-      ease: 'easeOutElastic',
-      time: 'slow' // slow, fast, 1000
+  $.each($('.popcircle-list'), function (index, value) {
+    $(this).closest('.popcircle-box').find('.popcircle-trigger').on('click', function (e) {
+      e.preventDefault();
+      var newClass = 'popcircle-' + index;
+      $(value).removeClass('popcircle-list').addClass(newClass);
+      $.popcircle('.' + newClass, {
+        spacing: '10px',
+        type: 'full', // full, half, quad
+        offset: 1.95, // 0, 1, 2, 3, 4, 5, 6, 7, or 5.1
+        ease: 'easeOutElastic',
+        time: 'slow' // slow, fast, 1000
+      });
     });
+//    $.popcircle('.popcircle-list', {
+//      spacing: '10px',
+//      type: 'full', // full, half, quad
+//      offset: 1.95, // 0, 1, 2, 3, 4, 5, 6, 7, or 5.1
+//      ease: 'easeOutElastic',
+//      time: 'slow' // slow, fast, 1000
+//    });
   });
 });

@@ -5,7 +5,6 @@ module Popcircle
       include FontAwesome::Rails::IconHelper
 
       def popcircle(circles, options = {})
-        # options        = circles.length > 1 ? circles.extract_options! : {}
         raise Exception.new('Argument `circles` not a Hash...') unless circles.is_a? Hash
 
         if circles[:icons]
@@ -13,7 +12,7 @@ module Popcircle
         elsif circles[:images]
           circles = circles[:images].map { |circle| { image: circle } }
         end
-        options[:list] ||= 'pops'
+        options[:list] ||= 'popcircle-list'
         content_tag :div, class: 'popcircle-box' do
           trigger + list(circles, options)
         end if circles
@@ -27,7 +26,7 @@ module Popcircle
 
       def list(circles, options)
         content_tag :div, class: 'popcircle' do
-          content_tag :ul, id: options[:list] do
+          content_tag :ul, class: options[:list] do
             circles.each do |circle|
               concat list_item(circle)
             end
