@@ -36,6 +36,12 @@ Second, you can include something like this in your `HTML`
 <%= popcircle(images: %w(one.png two.png three.png four.png five.png)) %>
 ```
 
+You can also use font awesome icons!  Thanks [font-awesome-rails](https://github.com/bokmann/font-awesome-rails)!
+
+```HTML
+<%= popcircle(icons: %w(facebook twitter google linkedin github)) %>
+```
+
 ## TODO
 
 - get helper tests back to running
