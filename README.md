@@ -40,6 +40,8 @@ You can also use font awesome icons!  Thanks [font-awesome-rails](https://github
 
 ```HTML
 <%= popcircle(icons: %w(facebook twitter google linkedin github)) %>
+
+<%= popcircle(stacked: %w(facebook twitter google linkedin github)) %>
 ```
 
 ## TODO
@@ -49,7 +51,6 @@ You can also use font awesome icons!  Thanks [font-awesome-rails](https://github
 - improve helper method
 - allow trigger background image to be configurable
 - allow size to be configurable
-- allow for stacked icons
 
 ## Contributing
 
