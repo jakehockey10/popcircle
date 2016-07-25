@@ -9,6 +9,8 @@ module Popcircle
 
         if circles[:icons]
           circles = circles[:icons].map { |circle| { icon: circle } }
+        elsif circles[:stacked]
+          circles = circles[:stacked].map { |circle| { stack: circle } }
         elsif circles[:images]
           circles = circles[:images].map { |circle| { image: circle } }
         end
@@ -40,10 +42,12 @@ module Popcircle
 
       def link_with_image_or_icon(circle)
         link_to (circle[:link] ||= '') do
-          if circle[:image]
-            image_tag circle[:image]
-          elsif circle[:icon]
+          if circle[:icon]
             fa_icon "#{circle[:icon]} 2x"
+          elsif circle[:stack]
+            fa_stacked_icon "#{circle[:stack]} inverse", base: 'circle', class: 'fa-3x'
+          elsif circle[:image]
+            image_tag circle[:image]
           else
             'UH OH'
           end
