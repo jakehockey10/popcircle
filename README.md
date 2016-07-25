@@ -1,6 +1,6 @@
 # Popcircle
 
-![](https://img.shields.io/gem/dt/popcircle.svg)
+![](https://img.shields.io/gem/dt/popcircle.svg) [![Gem Version](https://badge.fury.io/rb/popcircle.svg)](https://badge.fury.io/rb/popcircle)
 
 ![Alt text](/popcircle.gif)
 
