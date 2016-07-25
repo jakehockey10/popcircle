@@ -47,7 +47,7 @@ Second, you can include something like this in your `HTML`
 
 I could use some help!
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/popcircle. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/jakehockey10/popcircle. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## Development
 
