@@ -1,5 +1,7 @@
 # Popcircle
 
+![](http://ruby-gem-downloads-badge.herokuapp.com/popcircle)
+
 ![Alt text](/popcircle.gif)
 
 This gem adds `jquery.easing` and `jquery.popcircle` to your application and provides a view helper to add a radial menu with images or icons as the links surrounding the main trigger.
