@@ -38,7 +38,8 @@ Second, you can include something like this in your `HTML`
 
 ## TODO
 
-- Get helper tests back to running
+- get helper tests back to running
+- get `rake test` to run both gem tests and dummy app tests correctly
 - improve helper method
 - allow trigger background image to be configurable
 - allow size to be configurable
