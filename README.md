@@ -6,6 +6,8 @@
 
 This gem adds `jquery.easing` and `jquery.popcircle` to your application and provides a view helper to add a radial menu with images or icons as the links surrounding the main trigger.
 
+#### NOTE: this is VERY much still in progress.  I don't suggest using any of this for anything other than throw-away projects.
+
 ## Installation
 
 Add this line to your application's Gemfile:
